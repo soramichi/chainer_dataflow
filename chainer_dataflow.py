@@ -64,10 +64,10 @@ def main():
                 print("different data flow! (", k, ")")
                 print("forward: ")
                 for a in assignments_forward[k]:
-                    print(source.split('\n')[a[0]-1])
+                    print(source.split('\n')[a[0]-1].strip())
                 print("backward: ")
                 for a in assignments_backward[k]:
-                    print(source.split('\n')[a[0]-1])
+                    print(source.split('\n')[a[0]-1].strip())
                 print("--------------------------------------------------")
 
 if __name__ == '__main__':
